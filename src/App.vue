@@ -60,7 +60,6 @@ export default {
 		destroy(user){
 			this.$user.remove({id: user.id}).then(response => {
 				this.users = this.users.filter(u => u !== user)
-				console.log('utilisateur détruit');
  			}, response => {
 				console.log('error', response);
 			})
